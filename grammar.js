@@ -131,6 +131,11 @@
   ],
   "street_item": [
     "squirrel",
+    "accordion",
+    "bag of chips",
+    "shoe",
+    "shoe lace",
+    "t-shirt"
     "pickle",
     "cucumber",
     "burrito",
