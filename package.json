@@ -1,0 +1,15 @@
+{
+  "name": "20-and-capp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "20andcap.js",
+  "dependencies": {
+    "tracery-grammar": "^2.7.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
