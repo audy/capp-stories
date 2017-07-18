@@ -22,10 +22,15 @@
   ],
   "street_person": [
     "man",
+    "dad",
+    "mom",
+    "grandfather",
+    "grandmother",
     "woman",
     "boy",
     "girl",
     "electrician",
+    "wheelie kid",
     "repairman",
     "landlord",
     "police officer",
@@ -43,7 +48,9 @@
     "stoop kid",
     "millenial",
     "bartender",
-    "waiter"
+    "waiter",
+    "princess",
+    "coffee shop manager"
   ],
   "street_animal": [
     "pigeon",
@@ -52,13 +59,47 @@
     "lizard",
     "rat",
     "crow",
-    "seagull"
+    "seagull",
+    "frog",
+    "humming_bird"
   ],
-  "street_character": [
+  "smokeable": [
+    "joint",
+    "cigarette",
+    "vaporizer",
+    "blunt",
+    "spliff"
+  ],
+  "clothing": [
+    "flannel t-shirt",
+    "leather jacket",
+    "denim jacket",
+    "socks"
+  ],
+  "clothing_descriptor": [
+    "#color# #clothing#"
+  ],
+  "street_person_descriptor": [
+    "#street_person# smoking #a.smokable#",
+    "#street_person# wearing #a.clothing#",
+    "#street_person# and a #street_person#",
     "#street_person#",
-    "#street_animal#"
+    "#street_animal#",
+    "#street_person# riding #a.street_vehicle#",
+    "#street_person#",
+    "#street_person# holding hands with #a.street_person#",
+    "#street_person# making out with a #a.street_person#",
+    "#street_person# hugging #a.street_person#",
+    "#street_person# hugging #a.street_person# in front of #a.street_location#"
   ],
-  "street_character_verb": [
+  "street_vehicle": [
+    "scooter",
+    "skateboard",
+    "rollerskates",
+    "hoverboard",
+    "bicycle"
+  ],
+  "street_person_verb": [
     "flicked",
     "inspected",
     "picked up",
@@ -96,11 +137,23 @@
     "smashed",
     "dented"
   ],
-  "vehicle_color": [
+  "color": [
     "red",
     "white",
-    "burgundy"
-
+    "burgundy",
+    "yellow",
+    "pink",
+    "purple",
+    "blue",
+    "orange",
+    "sea-foam green",
+    "turquoise",
+    "silver",
+    "gold",
+    "tan",
+    "off-white",
+    "black",
+    "beglittered"
   ],
   "adverb": [
     "slowly",
@@ -131,24 +184,6 @@
   ],
   "street_item": [
     "squirrel",
-    "accordion",
-    "bag of chips",
-    "shoe",
-    "shoe lace",
-    "t-shirt",
-    "hoodie",
-    "beanie",
-    "sock",
-    "canteloupe",
-    "watermelon",
-    "avocado",
-    "rambutan",
-    "ice cream cone",
-    "newspaper",
-    "magazine",
-    "art show flyer",
-    "lego",
-    "egg shell",
     "pickle",
     "cucumber",
     "burrito",
@@ -192,30 +227,47 @@
   ],
   "vehicle_descriptor": [
     "#vehicle_adjective.a# #vehicleName#",
-    "#vehicle_adjective.a# #vehicle_color# #vehicleName#",
-    "#vehicle_color.a# #vehicleName#",
-    "#vehicleName.a# driven by #street_person.a#"
+    "#vehicle_adjective.a# #color# #vehicleName#",
+    "#color.a# #vehicleName#",
+    "#vehicleName.a# driven by #street_person_descriptor.a#"
   ],
   "set_vehicle": [
     "[vehicleName:#vehicle#]"
   ],
   "street_story": [
-    "#street_character.a# #street_character_verb# #street_item.a#"
+    "#street_person_descriptor.a# #street_person_verb# #street_item.a#",
+    "#street_person_descriptor.a# #street_person_verb# #street_item.a# #preposition# #a.street_location#"
   ],
   "preposition": [
     "over",
     "under",
     "in front of",
     "next to",
-    "off the side of"
+    "off the side of",
+    "beside",
+    "behind"
+  ],
+  "street_location": [
+    "sidewalk",
+    "corner",
+    "curb",
+    "stoop",
+    "stop sign",
+    "cross-walk",
+    "telephone pole",
+    "treet",
+    "shrub",
+    "power transformer",
+    "payphone",
+    "convenience store"
   ],
   "vehicle_story": [
-    "#street_person.a# #vehicle_active_action# #vehicle_descriptor#",
-    "#street_person.a# #adverb# #vehicle_active_action# #vehicle_descriptor#",
+    "#street_person_descriptor.a# #vehicle_active_action# #vehicle_descriptor#",
+    "#street_person_descriptor.a# #adverb# #vehicle_active_action# #vehicle_descriptor#",
     "#vehicle_descriptor# #vehicle_passive_action# #adverb#",
     "#vehicle_descriptor# #vehicle_passive_action# #adverb#",
     "#vehicle_story# while #vehicle_story#",
-    "#street_item.a# prevented #vehicle_descriptor# from driving through the intersection"
+    "#vehicle_story# in front of a #street_location#"
   ],
   "story": [
     "[#set_vehicle#] #vehicle_story#",
@@ -224,3 +276,5 @@
   ],
   "origin": ["#story#"]
 }
+
+
