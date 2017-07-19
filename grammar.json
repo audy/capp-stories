@@ -80,17 +80,17 @@
     "#color# #clothing#"
   ],
   "street_person_descriptor": [
-    "#street_person# smoking #a.smokable#",
-    "#street_person# wearing #a.clothing#",
+    "#street_person# smoking a #smokeable#",
+    "#street_person# wearing a #clothing#",
     "#street_person# and a #street_person#",
     "#street_person#",
     "#street_animal#",
-    "#street_person# riding #a.street_vehicle#",
+    "#street_person# riding a #street_vehicle#",
     "#street_person#",
-    "#street_person# holding hands with #a.street_person#",
-    "#street_person# making out with a #a.street_person#",
-    "#street_person# hugging #a.street_person#",
-    "#street_person# hugging #a.street_person# in front of #a.street_location#"
+    "#street_person# holding hands with a #street_person#",
+    "#street_person# making out with a a #street_person#",
+    "#street_person# hugging a #street_person#",
+    "#street_person# hugging a #street_person# #preposition# of a #street_location#"
   ],
   "street_vehicle": [
     "scooter",
@@ -267,7 +267,8 @@
     "#vehicle_descriptor# #vehicle_passive_action# #adverb#",
     "#vehicle_descriptor# #vehicle_passive_action# #adverb#",
     "#vehicle_story# while #vehicle_story#",
-    "#vehicle_story# in front of a #street_location#"
+    "#vehicle_story# in front of a #street_location#",
+    "#vehicle_descriptor# got into a fender-bender with a #vehicle_descriptor#"
   ],
   "story": [
     "[#set_vehicle#] #vehicle_story#",
