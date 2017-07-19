@@ -1,16 +1,41 @@
 {
+  "weather": [
+    "sunny",
+    "cloudy",
+    "foggy",
+    "rainy",
+    "windy",
+    "clear",
+    "humid",
+    "muggy",
+    "chilly",
+    "stormy"
+  ],
+  "time": [
+    "night",
+    "evening",
+    "morning",
+    "afternoon"
+  ],
+  "scenery_descriptor": [
+    "on a #weather# #time#",
+    "it was a #weather# #time"
+  ],
   "vehicle": [
-    "station-wagon",
+    "station wagon",
     "hearse",
-    "garbage-truck",
-    "street-cleaner",
+    "garbage truck",
+    "utility van",
+    "street cleaner",
+    "police car",
     "coupe",
+    "semi",
     "sports car",
     "motorcycle",
     "scooter",
     "moped",
     "bicycle",
-    "pickup-truck",
+    "pickup",
     "minivan",
     "van",
     "rental car",
@@ -39,6 +64,8 @@
     "skateboarder",
     "drunkard",
     "tech worker",
+    "street preacher",
+    "highschooler",
     "local",
     "tourist",
     "hipster",
@@ -61,7 +88,8 @@
     "crow",
     "seagull",
     "frog",
-    "humming_bird"
+    "humming bird",
+    "mouse"
   ],
   "smokeable": [
     "joint",
@@ -74,7 +102,10 @@
     "flannel t-shirt",
     "leather jacket",
     "denim jacket",
-    "socks"
+    "socks",
+    "pair of jorts",
+    "sports jersey",
+    "ripped up pair of jeans"
   ],
   "clothing_descriptor": [
     "#color# #clothing#"
@@ -180,7 +211,11 @@
     "burst into flames",
     "swerved",
     "ran out of gas",
-    "swerved around #street_item.a#"
+    "swerved around #street_item.a#",
+    "honked at a #vehicle#",
+    "honked at a #street_animal",
+    "honked at a #street_person",
+    "got into a fender-bender with a #vehicle"
   ],
   "street_item": [
     "squirrel",
